@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import bpy, mathutils
 import math, os, subprocess
 from spherical_mercator import SphericalMercator

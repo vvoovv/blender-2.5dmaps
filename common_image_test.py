@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 modelList = "../models/model_list.txt"
 
 import sys, os
