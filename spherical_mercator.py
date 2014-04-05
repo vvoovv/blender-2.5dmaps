@@ -3,9 +3,9 @@ import math
 class SphericalMercator:
 	radius = 6378137
 
-	def fromGeographic(self, coords):
-		x = self.radius * math.radians(coords[1])
-		y = self.radius * math.log(math.tan(math.pi/4 + math.radians(coords[0])/2))
+	def fromGeographic(self, lat, lon):
+		x = self.radius * math.radians(lon)
+		y = self.radius * math.log(math.tan(math.pi/4 + math.radians(lat)/2))
 		return [x,y]
 
 	def toGeographic(self, x, y):

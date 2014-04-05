@@ -90,10 +90,10 @@ class CommonImage(Map25D):
 		# check if the Blender zero point is set
 		if self.zeroPointSet:
 			# move object to its position according to the Mercator projection
-			(x, y) = self.projection.fromGeographic((latitude, longitude))
+			(x, y) = self.projection.fromGeographic(latitude, longitude)
 			bpy.ops.transform.translate(value=(x-self.x, y-self.y, 0))
 		else:
-			(self.x, self.y) = self.projection.fromGeographic((latitude, longitude))
+			(self.x, self.y) = self.projection.fromGeographic(latitude, longitude)
 			self.zeroPointSet = True
 
 	def loadFile(self, filename):
