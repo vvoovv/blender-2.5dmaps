@@ -115,4 +115,4 @@ class CommonImage(Map25D):
 		return (latitude, longitude, heading)
 
 	def getImageName(self, zoom):
-		return "raster_%s.png" % zoom
+		return "raster_z%s.png" % zoom
