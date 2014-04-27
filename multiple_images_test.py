@@ -12,6 +12,8 @@ with open(modelList) as f:
 
 manager = MultipleImages(
 	files = files,
+	zoomMin = 17,
+	zoomMax = 19,
 	blenderFilesDir = "../models",
 	outputImagesDir = "C:/Users/vvoovv/Documents/MapBox/project/test-2_5dmaps/models",
 	angleX = -45,

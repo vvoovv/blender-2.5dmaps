@@ -12,6 +12,8 @@ with open(modelList) as f:
 
 manager = CommonImage(
 	files = files,
+	zoomMin = 17,
+	zoomMax = 19,
 	blenderFilesDir = "../models",
 	gdalDir = "C:/Program Files/GDAL",
 	angleX = -45,
