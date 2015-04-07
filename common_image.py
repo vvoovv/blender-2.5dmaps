@@ -104,7 +104,7 @@ class CommonImage(Map25D):
 		scene = data_to.scenes[0]
 		latitude = scene["latitude"]
 		longitude = scene["longitude"]
-		heading = math.radians(scene["heading"])
+		heading = math.radians(scene["heading"]) if "heading" in scene else 0
 		# clean up
 		bpy.data.scenes.remove(scene)
 		# adding objects and curves to the scene

@@ -76,7 +76,7 @@ class MultipleImages(Map25D):
 		scene = data_to.scenes[0]
 		self.latitude = scene["latitude"]
 		self.longitude = scene["longitude"]
-		self.heading = math.radians(scene["heading"])
+		self.heading = math.radians(scene["heading"]) if "heading" in scene else 0
 		# calculate multiplier
 		self.multiplier = 256/(2*math.pi*self.radius*math.cos(math.radians(self.latitude)))
 		# clean up
