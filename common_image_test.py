@@ -14,10 +14,10 @@ manager = CommonImage(
 	files = files,
 	zoomMin = 17,
 	zoomMax = 19,
-	blenderFilesDir = "../models",
+	blenderFilesDir = "D:/projects/blender/models",
 	gdalDir = "C:/Program Files/GDAL",
 	angleX = -45,
 	angleY = -45,
-	outputImagesDir = "../rasters"
+	outputImagesDir = "D:/projects/blender/rasters"
 )
 manager.render()
